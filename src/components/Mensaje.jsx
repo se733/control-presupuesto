@@ -1,7 +1,9 @@
 import React from 'react'
 
-export const Mensaje = () => {
+export const Mensaje = ({children, tipo}) => {
   return (
-    <div>Mensaje</div>
+    <div className={`alerta ${tipo}`}>
+      {children}
+    </div>
   )
 }
